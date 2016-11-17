@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "Facebook Fake News Warning",
+  "description": "This extension shows a warning over links to possible fake news sites on Facebook.",
+  "version": "0.1",
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.facebook.com/*"
+      ],
+      "js": ["warn.js"],
+      "css": ["warn.css"]
+    }
+  ],
+
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

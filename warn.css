@@ -1,0 +1,32 @@
+._3x-2 {
+  position: relative;
+}
+
+.__fake-warning {
+  position: absolute;
+  width: 100%;
+  background: rgba(225, 225, 225, 0.95);
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 100;
+}
+
+.__fake-warning .warning-headline {
+  border-bottom: solid 2px;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+.__fake-warning .warning-text {
+  font-size: 1.2em;
+  text-align: center;
+}
+.__fake-warning .dismiss-warning {
+  padding: 1em 2em;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
